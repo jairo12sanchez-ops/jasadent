@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+</head>
+<meta charset="UTF8"
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestion de Especialistas | JasaDent</title>
+<head>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="especialistas-page">
+   <div class="user-menu">
+<button id="cerrarSesionBtn" class="btn" onclick="cerrarSecion()">Cerrar sesión</button>
+</div>
+    <div class="especialista-container">
+        <div class="titulo-encabezado">
+             <img src="1000153132.jpeg" class="logo-gestion" alt= "Logo JasaDent"/>
+        <h1
+ class="gestion-titulo"> Gestion de Especialistas </h1>
+ </div>
+    <form>
+        <table class="form-table"><tr> <td>ID Especialistas</td>
+            <td><input type="text" valvue="A" size="2"
+                style="width: 32px;display: inline block;">
+                </td>
+                </tr>
+                <td style="font-weight: bold;">
+                    <label for="Especialidad" style="vertical-align: middle;width: 28px; margin-right: 10px;">
+                        Especialidad:
+                        </td>
+                        <td>
+                <select  id="Especialidad"
+                class="select-especialidad" style="margin-left: 8px;">
+                    <option>Endodoncia </option>
+                    <option>Ortodoncia </option>
+                    <option>Odontologia </option>
+                    </select>
+                    </div>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>Tipo de Documento </td>
+                    <td>
+                        <select>
+                            <option>CC</option>
+                            <option>CE</option>
+                            <option>TI</option>
+                            <option>PASAPORTE</option>
+       </select>  
+        </td>
+        </tr>
+        <tr>
+        <td> Numero de Documento</td>
+        <td> <input type="text"></td>
+        </tr>
+        <tr>
+            <td> Nombres</td>
+        <td> <input type="text"></td>
+        </tr>
+        <tr>
+            <td> Apellidos</td>
+        <td> <input type="text"></td>
+        </tr>
+        <tr>
+            <td> Direccion</td>
+        <td> <input type="text"></td>
+        </tr>
+        <tr>
+            <td> Telefono</td>
+        <td> <input type="text"></td>
+        </tr>
+        <tr>
+            <td> Email</td>
+        <td> <input type="text"></td>
+        </tr>
+        <tr>
+            <td> Profesion</td>
+        <td> <input type="text"></td>
+        </tr>
+    </table>
+    <div class="btn-row">
+                        <button class="btn-form" type="submit"> Nuevo</button>
+                        <button class="btn-form" type="submit"> Guardar</button>
+                    <button class="btn-form" type="button"> Buscar</button>
+                    <button class="btn-form" type="button"> Eliminar</button>
+                    <button class="btn-form" type="button" onclick="regresarAlMenu()"> Regresar</button>               
+    </div>
+    <div class="footer">Desarrollado por JASA DESARROLLADORES S.A.S</div>
+ </div>
+<script src="especialistas.js"></script>
+</body>
+</html>

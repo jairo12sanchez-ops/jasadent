@@ -1,0 +1,24 @@
+function showTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+        function buscarPaciente() {
+            // Solo para demo, personalízalo según tu lógica real
+            document.getElementById('nombreCompleto').value = "Paciente DEMO";
+            document.getElementById('patientName').textContent = "Paciente DEMO";
+        }
+        function guardarHistoria(){ alert('Historia clínica guardada'); }
+        function actualizarHistoria(){ alert('Historia clínica actualizada'); }
+
+        function regresarAlMenu() {
+    window.location.href='menu.html';
+}

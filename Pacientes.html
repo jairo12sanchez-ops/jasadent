@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+</head>
+<meta charset="UTF8"
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestion de Pacientes | JasaDent</title>
+<head>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="pacientes-page">
+    <div class="user-menu">
+<button id="cerrarSesionBtn" class="btn" onclick="cerrarSecion()">Cerrar sesión</button>
+</div>
+    <div class="pacientes-container">
+        <div class="titulo-encabezado">
+             <img src="1000153132.jpeg" class="logo-gestion" alt= "Logo JasaDent"/>
+        <h1
+ class="gestion-titulo"> Gestion de Pacientes </h1>
+ </div>
+ <button class="btn-cerrar" onclick="window.location.href='menu.html'">Cerrar sesión</button>
+    <form>
+        <table class="form-table"><tr> <td>ID Pacientes</td>
+            <td><input type="text" valvue="A" size="2"
+                style="width: 32px;display: inline block;">
+                </td>
+                <tr>
+                    <td style="font-weight: bold;">
+                        <label for="codigo" style="vertical-align: middle; width: 120px;margin-right: 10px;">
+                        </label>
+                </tr>
+                    <td>Tipo de Documento </td>
+                    <td>
+                        <select>
+                            <option>CC</option>
+                            <option>CE</option>
+                            <option>TI</option>
+                            <option>PASAPORTE</option>
+       </select>  
+        </td>
+        </tr>
+        <tr>
+        <td> Numero de Documento</td>
+        <td> <input type="text"></td>
+        </tr>
+        <tr>
+            <td> Nombres</td>
+        <td> <input type="text"></td>
+        </tr>
+        <tr>
+            <td> Apellidos</td>
+        <td> <input type="text"></td>
+        </tr>
+        <tr>
+            <td> Direccion</td>
+        <td> <input type="text"></td>
+        </tr>
+        <tr>
+            <td> Telefono</td>
+        <td> <input type="text"></td>
+        </tr>
+        <tr>
+            <td> Email</td>
+        <td> <input type="text"></td>
+        </tr>
+        <tr>
+            <td>Genero</td>
+        <td> 
+            <select>
+                <option>Masculino</option>
+                <option>Femenino</option>
+            </select>
+        </tr>
+    </table>
+                    <div class="btn-row"> 
+                        <button class="btn-form" type="button"> Nuevo</button>
+                        <button class="btn-form" type="button"> Guardar</button>
+                    <button class="btn-form" type="button"> Buscar</button>
+                    <button class="btn-form" type="button"> Eliminar</button>
+                 <button class="btn-form" type="button" onclick="regresarAlMenu()">Regresar</button>
+    </div>
+    <div class="footer">Desarrollado por JASA DESARROLLADORES S.A.S</div>
+     </div>
+     <script src="Pacientes.js"></script>
+</body>
+</html>
+ 

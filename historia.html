@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Historia Clínica | JasaDent</title>
+    
+<head>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body class="historia-page">
+   <div class="user-menu">
+<button id="cerrarSesionBtn" class="btn" onclick="cerrarSecion()">Cerrar sesión</button>
+</div>
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                <div class="logo-container">
+                    <img src="1000153132.jpeg" alt="Logo JasaDent">
+                </div>
+                <div class="title-section">
+                    <h1>Gestión de Historia Clínica</h1>
+                </div>
+            </div>
+        </div>
+        <div class="patient-info">
+            <div class="search-box">
+                <label style="font-weight: 600; white-space: nowrap;">Número de Identificación:</label>
+                <input type="text" id="searchId" placeholder="Digite número de Identificación">
+                <button class="btn-search" onclick="buscarPaciente()">Buscar</button>
+            </div>
+            <div class="patient-name"></div>
+        </div>
+        <div class="tabs">
+            <button class="tab active" onclick="showTab(event,'basicos')">Datos Básicos</button>
+            <button class="tab" onclick="showTab(event,'antecedentes')">Antecedentes</button>
+            <button class="tab" onclick="showTab(event,'tratamientos')">Tratamientos</button>
+            <button class="tab" onclick="showTab(event,'diagnostico')">Diagnóstico</button>
+            <button class="tab" onclick="showTab(event,'procedimientos')">Procedimientos</button>
+            <button class="tab" onclick="showTab(event,'imagenes')">Imágenes</button>
+        </div>
+        <div class="content">
+            <div class="tab-content active" id="basicos">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Nombre completo</label>
+                        <input type="text" id="nombreCompleto" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Edad</label>
+                        <input type="number" id="edad">
+                    </div>
+                    <div class="form-group">
+                        <label>Fecha de nacimiento</label>
+                        <input type="date" id="fechaNac">
+                    </div>
+                    <div class="form-group">
+                        <label>Género</label>
+                        <select id="genero">
+                            <option value="">Seleccione...</option>
+                            <option value="M">Masculino</option>
+                            <option value="F">Femenino</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Teléfono</label>
+                        <input type="tel" id="telefono">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Dirección</label>
+                        <input type="text" id="direccion">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="antecedentes">
+                <div class="form-grid">
+                    <div class="form-group full-width">
+                        <label>Antecedentes médicos</label>
+                        <textarea id="antMedicos" placeholder="Enfermedades, alergias, medicamentos..."></textarea>
+                    </div>
+                    <div class="form-group full-width">
+                        <label>Antecedentes odontológicos</label>
+                        <textarea id="antOdonto" placeholder="Tratamientos previos, cirugías..."></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="tratamientos">
+                <div class="form-grid">
+                    <div class="form-group full-width">
+                        <label>Tratamientos realizados</label>
+                        <textarea id="tratamientos" placeholder="Historial de tratamientos"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="diagnostico">
+                <div class="form-grid">
+                    <div class="form-group full-width">
+                        <label>Diagnóstico</label>
+                        <textarea id="diagnostico" placeholder="Diagnóstico clínico..."></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="procedimientos">
+                <div class="form-grid">
+                    <div class="form-group full-width">
+                        <label>Procedimientos realizados</label>
+                        <textarea id="procedimientos" placeholder="Detalle de procedimientos..."></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="imagenes">
+                <p style="text-align:center; color:#6c757d;">Módulo de imágenes en desarrollo...</p>
+            </div>
+            <div class="botones-citas">
+                <button class="btn-form" onclick="guardarHistoria()">Guardar</button>
+                <button class="btn-form" onclick="actualizarHistoria()">Actualizar</button>
+                <button class="btn-form" onclick="cancelar()">Cancelar</button>
+                <button class="btn-form" type="button" onclick="regresarAlMenu()"> Regresar</button> 
+            </div>
+        </div>
+    
+  </div>
+        <div class="footer">Desarrollado por JASA DESARROLLADORES S.A.S</div>
+    </div>
+    <script src="historia.js"></script>
+</body>
+</html>

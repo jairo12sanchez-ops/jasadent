@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+</head>
+<meta charset="UTF8"
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestion de Citas | JasaDent</title>
+<head>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="citas-page">
+    <div class="user-menu">
+<button id="cerrarSesionBtn" class="btn" onclick="cerrarSecion()">Cerrar sesión</button>
+</div>
+    <div class="citas-container"><div class="logo-citas"><img src= "1000153132.jpeg" alt="Logo-JasaDent" />
+    </div>
+    <div class="titulo-citas"><h1>Gestion de Citas</h1></div> <form class="form-citas" autocomplete="off">
+        <label for="idcita">ID Cita</label> <input type="text" id="idcita" name="idcita" readonly value="CITA001">
+        <label for="identificacion">Numero de Identificacion</label>
+        <div class="id-buscar-row">
+        <input type="text" id="identificacion" name="identificacion" placeholder="digite numero de identificacion">
+        <button type="button" class="btn-buscar" id="btn-buscar">Buscar</button>
+        </div>  
+     <label for="nombre">Nombres y Apellidos</label>
+        <input type="text" id="nombre" name="nombre">
+        <label for="servicio">Tipo de Servicio</label>
+        <select id="servicio">
+            <option value="Odontologia">Odontologia</option>
+            <option value="Endodoncia">Endodoncia</option>
+            <option value="Ortodoncia">Ortodoncia</option>
+            <option value="Higiene oral">Higiene Oral</option>
+        </select>
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" name="fecha">
+        <label for="hora">Hora</label>
+        <input type="time" id="hora" name="hora">
+         <div class="botones-citas"> 
+        <button class="btn-form" type="submit">Confirmar </button>
+        <button class="btn-form" type="submit">Modificar </button>
+       <button class="btn-form" type="submit">Cancelar</button>
+       <button class="btn-form" type="button" onclick="regresarAlMenu()"> Regresar</button> 
+    </div>
+    </form>
+    <div class="enlace-regresar">
+    <a href="menu.html">
+  </div>
+    <div class="footer">Desarrollado por JASA DESARROLLADORES S.A.S
+</div>
+<script src="citas2.js"></script>
+</body>
+</html>

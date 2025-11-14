@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Consultorios | JasaDent</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="consultorios-page">
+    <div class="user-menu">
+        <button id="cerrarSesionBtn" class="btn" onclick="cerrarSecion()">Cerrar sesión</button>
+    </div>
+    <div class="consultorio-container">
+        <div class="consultorio-logo-titulo">
+            <img src="1000153132.jpeg" class="logo-gestion" alt="Logo JasaDent" width="170"/>
+            <h3 class="titulo-consultorio">Gestión de Consultorios</h3>
+        </div>
+        <form>
+            <div class="for-row">
+                <label for="codigo">Id del Consultorio</label>
+                <input type="text" id="codigo" name="codigo" value="01">
+            </div>
+            <div class="for-row">
+                <label for="descripcion">Descripción</label>
+                <select id="descripcion" name="descripcion">
+                    <option value="Endodoncia">Endodoncia</option>
+                    <option value="Ortodoncia">Ortodoncia</option>
+                    <option value="Odontologia">Odontologia</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="ubicacion">Ubicación</label>
+                <select id="ubicacion" name="ubicacion">
+                    <option value="Consultorio A">Consultorio A</option>
+                    <option value="Consultorio B">Consultorio B</option>
+                    <option value="Consultorio C">Consultorio C</option>
+                </select>
+            </div>
+            <div class="btn-row">
+                <button class="btn-form" type="submit">Nuevo</button>
+                <button class="btn-form" type="submit">Guardar</button>
+                <button class="btn-form" type="button">Buscar</button>
+                <button class="btn-form" type="button">Eliminar</button>
+                <button class="btn-form" type="button" onclick="regresarAlMenu()">Regresar</button>
+            </div>
+        </form>
+        <table id="tablaConsultorios">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Descripción</th>
+                    <th>Ubicación</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <div class="footer">Desarrollado por JASA DESARROLLADORES S.A.S</div>
+    </div>
+    <script src="consultorio.js"></script>
+</body>
+</html>
