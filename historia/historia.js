@@ -20,5 +20,5 @@ function showTab(evt, tabName) {
         function actualizarHistoria(){ alert('Historia clínica actualizada'); }
 
         function regresarAlMenu() {
-    window.location.href='menu.html';
+    window.location.href='../menu/menu.html';
 }
