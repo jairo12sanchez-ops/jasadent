@@ -1,3 +1,1 @@
-function regresarAlMenu() {
-    window.location.href='menu.html';
-}
+function regresarAlMenu() {window.location.href="../menu/menu.html";}
