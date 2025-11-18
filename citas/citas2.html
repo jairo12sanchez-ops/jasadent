@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gestion de Citas | JasaDent</title>
 <head>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body class="citas-page">
     <div class="user-menu">
 <button id="cerrarSesionBtn" class="btn" onclick="cerrarSecion()">Cerrar sesión</button>
 </div>
-    <div class="citas-container"><div class="logo-citas"><img src= "1000153132.jpeg" alt="Logo-JasaDent" />
+    <div class="citas-container"><div class="logo-citas"><img src= "../logo/1000153132.jpeg" alt="Logo-JasaDent" />
     </div>
     <div class="titulo-citas"><h1>Gestion de Citas</h1></div> <form class="form-citas" autocomplete="off">
         <label for="idcita">ID Cita</label> <input type="text" id="idcita" name="idcita" readonly value="CITA001">
@@ -34,7 +34,7 @@
         <label for="hora">Hora</label>
         <input type="time" id="hora" name="hora">
          <div class="botones-citas"> 
-        <button class="btn-form" type="submit">Confirmar </button>
+        <button class="btn-form btn-green" type="submit">Confirmar </button>
         <button class="btn-form" type="submit">Modificar </button>
        <button class="btn-form" type="submit">Cancelar</button>
        <button class="btn-form" type="button" onclick="regresarAlMenu()"> Regresar</button> 
