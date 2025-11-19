@@ -1217,8 +1217,8 @@ body.pacientes-page {
 }
 
 .btn-form {
-    background: var(--color-green-400);
-    color: var(--color-btn-primary-text);
+    background: #268c8c;
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 6px;
@@ -1230,10 +1230,10 @@ body.pacientes-page {
 }
 
 .btn-form:hover {
-    background: var(--color-green-400);
+    background: #268c8c;
+    color : white;
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
-    color: var(--color-btn-primary-text);
 }
 
 .btn-form.btn-eliminar {
