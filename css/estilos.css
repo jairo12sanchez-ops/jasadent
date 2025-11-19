@@ -1230,9 +1230,10 @@ body.pacientes-page {
 }
 
 .btn-form:hover {
-    background: var(--color-primary-hover);
+    background: var(--color-green-400);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
+    color: var(--color-btn-primary-text);
 }
 
 .btn-form.btn-eliminar {
