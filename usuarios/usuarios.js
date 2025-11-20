@@ -11,7 +11,7 @@ function guardarUsuario() {
         rol: document.getElementById('rol').value
     };
 
-    fetch('usuarios_guardar.php', {
+    fetch('usuarios.php', {
         method: 'POST',
         body: JSON.stringify(datos),
         headers: { 'Content-Type': 'application/json' }
