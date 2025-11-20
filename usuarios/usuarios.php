@@ -1,9 +1,11 @@
 <?php
 $data = json_decode(file_get_contents("php://input"), true);
 
-$conn = new mysqli("localhost", "root", "", "jasadentdb");
+$conn = new mysqli("localhost", "root", "", "jasadentbd");
 
-$sql = "INSERT INTO usuarios (tipo_documento, numero_documento, nombres, apellidos, direccion, telefono, email, rol)
+$password = password_hash($data['password'], PASSWORD_DEFAULT);
+
+$sql = "INSERT INTO usuarios (tipo_documento, numero_documento, nombres, apellidos, direccion, telefono, email, password, rol)
         VALUES (
             '{$data['tipo_documento']}',
             '{$data['numero_documento']}',
@@ -12,6 +14,7 @@ $sql = "INSERT INTO usuarios (tipo_documento, numero_documento, nombres, apellid
             '{$data['direccion']}',
             '{$data['telefono']}',
             '{$data['email']}',
+            '$password',
             '{$data['rol']}'
         )";
 if($conn->query($sql) === TRUE){

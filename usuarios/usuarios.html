@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gestión de Usuarios | JasaDent</title>
   <link rel="stylesheet" href="../css/estilos.css">
 </head>
+
 <body class="pacientes-page">
   <div class="user-menu">
     <button id="cerrarSesionBtn" class="btn-blue" onclick="cerrarSecion()">Cerrar sesión</button>
   </div>
   <div class="pacientes-container">
     <div class="titulo-encabezado">
-      <img src="../logo/1000153132.jpeg" class="logo-gestion" alt="Logo JasaDent"/>
+      <img src="../logo/1000153132.jpeg" class="logo-gestion" alt="Logo JasaDent" />
       <h1 class="gestion-titulo">Gestión de Usuarios</h1>
     </div>
     <form id="formUsuario">
@@ -59,6 +61,14 @@
           <td><input type="email" id="email" name="email"></td>
         </tr>
         <tr>
+          <td>Contraseña</td>
+          <td><input type="password" id="password" name="password"></td>
+        </tr>
+        <tr>
+          <td>Confirmar Contraseña</td>
+          <td><input type="password" id="confirm_password" name="confirm_password"></td>
+        </tr>
+        <tr>
           <td>Rol</td>
           <td>
             <select id="rol" name="rol">
@@ -83,6 +93,5 @@
   </div>
   <script src="../usuarios/usuarios.js"></script>
 </body>
-</html>
 
- 
+</html>
