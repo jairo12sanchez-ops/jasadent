@@ -1,4 +1,4 @@
-//boton guardar y crear un paciente//
+//boton guardar y crear un usuario//
 function guardarUsuario() {
     var password = document.getElementById('password').value;
     var confirmPassword = document.getElementById('confirm_password').value;
