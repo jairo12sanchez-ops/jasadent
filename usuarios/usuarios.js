@@ -29,10 +29,15 @@ function guardarUsuario() {
         .then(data => {
             if (data.success) {
                 alert('Usuario guardado con ID: ' + data.id_usuario);
-                document.getElementById('id_usuario').value = data.id_usuario;
+                document.getElementById('formUsuario').reset();
+                // document.getElementById('id_usuario').value = data.id_usuario; // Optional: keep ID or clear it too? Usually reset clears everything.
             } else {
                 alert('Error: ' + data.error);
             }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Error al guardar usuario: ' + error.message);
         });
 }
 //botton regresar al menu//
