@@ -1,0 +1,11 @@
+{
+    "id_usuario": "1",
+    "tipo_documento": "CC",
+    "numero_documento": "123456789",
+    "nombres": "Test",
+    "apellidos": "User",
+    "direccion": "Test Address",
+    "telefono": "1234567890",
+    "email": "test@example.com",
+    "rol": "Administrador"
+}

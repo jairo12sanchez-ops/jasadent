@@ -61,7 +61,7 @@ function buscarUsuario() {
         .then(data => {
             if (data.success) {
                 var u = data.usuario;
-                document.getElementById('id_usuario').value = u.id_usuario;
+                document.getElementById('id_usuario').value = u.id_usuarios;
                 document.getElementById('tipo_documento').value = u.tipo_documento;
                 document.getElementById('numero_documento').value = u.numero_documento;
                 document.getElementById('nombres').value = u.nombres;
